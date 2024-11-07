@@ -1,0 +1,16 @@
+# Ignore cookie files
+/data/www.youtube.com_cookies
+/data/www.youtube.com_cookies.txt
+
+
+# Ignore virtual environment folder
+venv/
+
+# Ignore videos folder
+videos/
+
+# Ignore model folder
+models/
+
+# Ignore data files
+*.npy

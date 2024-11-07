@@ -10,7 +10,7 @@ venv/
 videos/
 
 # Ignore model folder
-models/
+/models/
 
 # Ignore data files
 *.npy

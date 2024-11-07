@@ -1,39 +1,38 @@
 # ASL-Interpreter
 
-steps needed 
+steps needed:
 
-Create a virtual environment in your project folder:
-pip install virtualenv
+Creating the Virtual Environment: Users can recreate the environment using:
+python3 -m venv venv
+source venv/bin/activate  # On macOS/Linux
+venv\Scripts\activate     # On Windows
+pip install -r requirements.txt
 
-Create a virtual environment in your project folder:
-virtualenv venv
-
-Activate the virtual environment:
-On Windows: venv\Scripts\activate
-On macOS/Linux: source venv/bin/activate
+if libraries are not correctly installed used:
+install libraries:
+pip install tensorflow opencv-python numpy pandas matplotlib scikit-learn install yt-dlp
 
 Make sure ffmpeg is installed and available in your system's PATH.
 On macOS, you can install it using Homebrew:
 brew install ffmpeg
 On Windows, you can download it from ffmpeg.org and follow the installation instructions.
 
-install libraries:
-pip install tensorflow opencv-python numpy pandas matplotlib scikit-learn install yt-dlp
-
 get youtube cookies using cookies.txt extension on chrome
 
 .gitigore:
-# Ignore cookie files
+Ignore cookie files
 /data/www.youtube.com_cookies
 /data/www.youtube.com_cookies.txt
 
 
-# Ignore virtual environment folder
+Ignore virtual environment folder
 venv/
 
-# Ignore videos folder
+Ignore videos folder
+/videos/
 
-# Ignore data and model files 
+Ignore model folder
+/models/
+
+Ignore data files
 *.npy
-/models/*.h5
-/models/*.keras
